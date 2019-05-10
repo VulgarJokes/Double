@@ -3,7 +3,7 @@
 <html >
 <head>
     <meta charset="utf-8" />
-    <title>双创项目信息管理系统</title>
+    <title>用户信息管理系统</title>
     <link rel="shortcut icon" href="${ctx}/images/jcohy.png" type="image/x-icon">
     <!-- layui.css -->
     <link href="${ctx!}/js/plugins/layui/css/layui.css" rel="stylesheet" />
@@ -24,7 +24,7 @@
                     <a class="ht-user-name">${role}</a>
                 </div>
             </div>
-            <span class="sys-title">双创项目信息管理系统</span>
+            <span class="sys-title">用户信息管理系统</span>
             <ul class="ht-nav">
                 <li class="ht-nav-item">
                     <a id="updatePassword" style="cursor: pointer"><i class="fa fa-power-off fa-fw"></i>修改密码</a>
@@ -49,19 +49,19 @@
                         <dl class="layui-nav-child">
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/student/index" data-id="1">学生信息管理</a></dd>
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/teacher/index" data-id="2">教师信息管理</a></dd>
-                            <dd><a href="javascript:;" data-url="${ctx!}/admin/expert/index" data-id="3">专家信息管理</a></dd>
+                            <#--<dd><a href="javascript:;" data-url="${ctx!}/admin/expert/index" data-id="3">专家信息管理</a></dd>-->
                         </dl>
                     </li>
 
-                    <li class="layui-nav-item">
+                    <#--<li class="layui-nav-item">
                         <a href="javascript:;"><i class="fa fa-file-text"></i>项目管理</a>
                         <dl class="layui-nav-child">
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/project/index" data-id="4">我的项目</a></dd>
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/allot/index" data-id="5">评审分配</a></dd>
                             <dd><a href="javascript:;" data-url="${ctx!}/project/history" data-id="6">历史项目</a></dd>
-                            <#--<dd><a href="javascript:;" data-url="${ctx!}/admin/project/index" data-id="5">项目审核</a></dd>-->
+                            &lt;#&ndash;<dd><a href="javascript:;" data-url="${ctx!}/admin/project/index" data-id="5">项目审核</a></dd>&ndash;&gt;
                         </dl>
-                    </li>
+                    </li>-->
 
                     <li class="layui-nav-item">
                         <a href="javascript:;"><i class="fa fa-graduation-cap"></i>学院管理</a>
@@ -69,11 +69,11 @@
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/dept/index" data-id="7">学院信息</a></dd>
                         </dl>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" data-url="${ctx!}/admin/major/index" data-id="8">系所信息</a></dd>
+                            <dd><a href="javascript:;" data-url="${ctx!}/admin/major/index" data-id="8">专业信息</a></dd>
                         </dl>
                     </li>
 
-                    <li class="layui-nav-item">
+                    <#--<li class="layui-nav-item">
                         <a href="javascript:;"><i class="fa fa-plus-square"></i>类别管理</a>
                         <dl class="layui-nav-child">
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/type/index" data-id="5">类别信息</a></dd>
@@ -81,16 +81,16 @@
                         <dl class="layui-nav-child">
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/type/update" data-id="9">类别管理</a></dd>
                         </dl>
-                    </li>
+                    </li>-->
 
-                    <li class="layui-nav-item">
+                    <#--<li class="layui-nav-item">
                         <a href="javascript:;"><i class="fa fa-file-text"></i>统计信息</a>
                         <dl class="layui-nav-child">
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/graph/index" data-id="10">统计信息</a></dd>
                         </dl>
-                    </li>
+                    </li>-->
 
-                    <li class="layui-nav-item">
+                    <#--<li class="layui-nav-item">
                         <a href="javascript:;"><i class="fa fa-comment"></i>消息管理</a>
                         <dl class="layui-nav-child">
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/notice" data-id="12">我的消息</a></dd>
@@ -98,7 +98,7 @@
                         <dl class="layui-nav-child">
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/circular/index" data-id="13">发布通告</a></dd>
                         </dl>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>
@@ -115,7 +115,7 @@
                 <div class="layui-tab-content">
                     <div class="layui-tab-item layui-show">
                         <p style="padding: 10px 15px; margin-bottom: 20px; margin-top: 10px; border:1px solid #ddd;display:inline-block;">
-                            双创项目信息管理系统
+                            用户信息管理系统
                             <span style="padding-left:1em;">用户帐号：${Session.user.num?c}</span>
                             <span style="padding-left:1em;">用户姓名：${Session.user.name}</span>
                             <span style="padding-left:1em;">角色：${Session.role}</span>

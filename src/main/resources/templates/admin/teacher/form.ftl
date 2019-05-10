@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> - 学生信息</title>
+    <title> - 教師信息</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -137,7 +137,7 @@
 <script type="text/javascript">
     layui.config({
         base: '${ctx}/js/'
-    }).use('admin/teacher/form');
+    }).use('admin/teacher/form');/*使用对应的js文件目录*/
 </script>
 </body>
 

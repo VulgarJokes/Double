@@ -73,7 +73,7 @@
     </div>
 </fieldset>
 
-<!-- layui.js -->
+<!-- layui.js 进行layui的引用-->
 <script src="${ctx!}/js/plugins/layui/layui.js"></script>
 <!-- layui规范化用法 -->
 <script type="text/javascript">
