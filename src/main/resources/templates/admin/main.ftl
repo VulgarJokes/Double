@@ -26,11 +26,11 @@
             </div>
             <span class="sys-title">用户信息管理系统</span>
             <ul class="ht-nav">
-                <li class="ht-nav-item">
+                <#--<li class="ht-nav-item">
                     <a id="updatePassword" style="cursor: pointer"><i class="fa fa-power-off fa-fw"></i>修改密码</a>
                     <input type="hidden" value="${Session.user.num?c}" id="num">
                     <input type="hidden" value="${Session.role}" id="role">
-                </li>
+                </li>-->
                 <li class="ht-nav-item">
                     <a href="${ctx!}/logout"><i class="fa fa-power-off fa-fw"></i>注销</a>
                 </li>
@@ -49,16 +49,15 @@
                         <dl class="layui-nav-child">
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/student/index" data-id="1">学生信息管理</a></dd>
                             <dd><a href="javascript:;" data-url="${ctx!}/admin/teacher/index" data-id="2">教师信息管理</a></dd>
-                            <#--<dd><a href="javascript:;" data-url="${ctx!}/admin/expert/index" data-id="3">专家信息管理</a></dd>-->
                         </dl>
                     </li>
 
                     <#--<li class="layui-nav-item">
-                        <a href="javascript:;"><i class="fa fa-file-text"></i>项目管理</a>
+                        <a href="javascript:;"><i class="fa fa-file-text"></i>选课管理</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" data-url="${ctx!}/admin/project/index" data-id="4">我的项目</a></dd>
-                            <dd><a href="javascript:;" data-url="${ctx!}/admin/allot/index" data-id="5">评审分配</a></dd>
-                            <dd><a href="javascript:;" data-url="${ctx!}/project/history" data-id="6">历史项目</a></dd>
+                            <dd><a href="javascript:;" data-url="${ctx!}/admin/project/index" data-id="4">我的选课</a></dd>
+                            <dd><a href="javascript:;" data-url="${ctx!}/admin/allot/index" data-id="5">选课分配</a></dd>
+                            <dd><a href="javascript:;" data-url="${ctx!}/project/history" data-id="6">历史选课</a></dd>
                             &lt;#&ndash;<dd><a href="javascript:;" data-url="${ctx!}/admin/project/index" data-id="5">项目审核</a></dd>&ndash;&gt;
                         </dl>
                     </li>-->
@@ -73,39 +72,10 @@
                         </dl>
                     </li>
 
-                    <#--<li class="layui-nav-item">
-                        <a href="javascript:;"><i class="fa fa-plus-square"></i>类别管理</a>
-                        <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" data-url="${ctx!}/admin/type/index" data-id="5">类别信息</a></dd>
-                        </dl>
-                        <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" data-url="${ctx!}/admin/type/update" data-id="9">类别管理</a></dd>
-                        </dl>
-                    </li>-->
-
-                    <#--<li class="layui-nav-item">
-                        <a href="javascript:;"><i class="fa fa-file-text"></i>统计信息</a>
-                        <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" data-url="${ctx!}/admin/graph/index" data-id="10">统计信息</a></dd>
-                        </dl>
-                    </li>-->
-
-                    <#--<li class="layui-nav-item">
-                        <a href="javascript:;"><i class="fa fa-comment"></i>消息管理</a>
-                        <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" data-url="${ctx!}/admin/notice" data-id="12">我的消息</a></dd>
-                        </dl>
-                        <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" data-url="${ctx!}/admin/circular/index" data-id="13">发布通告</a></dd>
-                        </dl>
-                    </li>-->
                 </ul>
             </div>
         </div>
-        <!--收起导航-->
-        <div class="layui-side-hide layui-bg-cyan">
-            <i class="fa fa-long-arrow-left fa-fw"></i>收起导航
-        </div>
+
         <!--主体内容-->
         <div class="layui-body">
             <div style="margin:0;position:absolute;top:15px;bottom:0px;width:100%;" class="layui-tab layui-tab-brief" lay-filter="tab" lay-allowclose="true">
@@ -126,7 +96,7 @@
         </div>
         <!--底部信息-->
         <div class="layui-footer">
-            <p style="line-height:44px;text-align:center;">Copyright © 2017 - Scis. All Rights Reserved</p>
+            <p style="line-height:44px;text-align:center;">2015329700038-李嘉鹏</p>
         </div>
 
     <script src="${ctx!}/js/plugins/layui/layui.js"></script>

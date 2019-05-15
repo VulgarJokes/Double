@@ -81,16 +81,6 @@ public class LoginController {
                 }
                 session.setAttribute("user",login);
                 return JsonResult.ok().set("returnUrl", "/teacher/main");
-            }else if(StringUtils.trim(role).equals("expert")){
-                Expert login = expertService.login(num, password);
-                if(login == null){
-                    return JsonResult.fail("登录失败,用户名不存在");
-                }
-                if(!login.getPassword().equals(password)){
-                    return JsonResult.fail("登录失败,用户名账号密码不匹配");
-                }
-                session.setAttribute("user",login);
-                return JsonResult.ok().set("returnUrl", "/expert/main");
             }else if(StringUtils.trim(role).equals("admin")){
                 Admin login = adminService.login(num, password);//获取到登陆用户的数据整个实体
                 if(login == null){
